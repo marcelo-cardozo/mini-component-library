@@ -13,7 +13,7 @@ const ProgressBar = ({ value: auxValue, size }) => {
   return (
     <Wrapper size={size}>
       <InnerBarWrapper>
-        <Bar role="progressbar" aria-valuenow={value} aria-valuemin="0" aria-valuemax="100" value={value}>
+        <Bar role="progressbar" aria-valuenow={value} aria-valuemin={minValue} aria-valuemax={maxValue} value={value}>
           <VisuallyHidden>{value}%</VisuallyHidden>
         </Bar>
       </InnerBarWrapper>
